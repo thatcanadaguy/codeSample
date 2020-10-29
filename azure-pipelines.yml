@@ -1,1 +1,11 @@
-#
+- task: FortifySCA@6
+  inputs:
+    runBuildTranslate: true
+    applicationType: 'dotnet'
+    fortifyProjects: '**\*.sln'
+    runFortifyRulepackUpdate: false
+    runFortifyClean: true
+    scaVerbose: false
+    scaDebug: false
+    runFortifyScan: true
+    fortifyScanType: 'Local'
